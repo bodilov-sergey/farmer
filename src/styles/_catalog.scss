@@ -1,0 +1,27 @@
+.catalog {
+    padding-top: 4.235vw;
+    //# md
+    @media (min-width: 768px) {
+        padding-top: 32.5px;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 360px;
+        //# custom
+        @media (min-width: 645px) {
+            max-width: 100%;
+        }
+        // # custom
+        @media (min-width: 813px) {
+            max-width: 750px;
+        }
+        // # lg
+        @media (min-width: 992px) {
+            max-width: 100%;
+            justify-content: flex-start;
+        }
+    }
+}
